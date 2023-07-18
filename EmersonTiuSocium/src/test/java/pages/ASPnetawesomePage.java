@@ -38,7 +38,6 @@ public class ASPnetawesomePage {
 	//Returns null if next page is disabled or there is no more next page
 	public String getNextPageButtonXpathByPage(int currentPage) {
 		String nextPageLocator = divGridFilter+"//button[text()='"+Integer.toString(currentPage+1)+"']";
-		System.out.println(nextPageLocator);
 		if(!driver.findElements(By.xpath(nextPageLocator)).isEmpty())
 			return	nextPageLocator;
 		else if(!driver.findElements(By.xpath(buttonCurrent)).isEmpty())
