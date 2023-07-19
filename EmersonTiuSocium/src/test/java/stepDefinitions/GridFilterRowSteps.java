@@ -36,7 +36,7 @@ public class GridFilterRowSteps {
         id = reader.readLine();
     }
 	
-	@Given("a broswer is open")
+	@Given("a browser is open")
 	public void a_broswer_is_open() {
 	    // Write code here that turns the phrase above into concrete actions
 		String localDir = System.getProperty("user.dir");
@@ -71,7 +71,7 @@ public class GridFilterRowSteps {
 	}
 
 
-	@When("the user searches for the ID")
+	@When("I search for the ID")
 	public void the_user_searches_for_the_id() {
 	    // Write code here that turns the phrase above into concrete actions
 		rowIdLocator = aspNetAwesomepage.getGridFilterRowXpathById(id);
